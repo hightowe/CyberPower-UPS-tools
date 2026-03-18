@@ -8,7 +8,7 @@ clients (like this one) via a Unix socket.
 
 ### Example usage
 ```
-# Are we on AC/Power and what is its voltage?
+# Are we on A/C power and what is its voltage?
 $ ./status_from_pwrstatd.py | \
     jq '{ac_present: .ac_present, utility_volt: (.utility_volt | tonumber / 1000) }'
 {
